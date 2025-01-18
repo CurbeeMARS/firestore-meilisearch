@@ -83,7 +83,7 @@ async function sendDocumentsToMeilisearch(docs, index, fieldsToIndex) {
         return (0, meilisearch_adapter_1.adaptDocumentForMeilisearch)(snapshot.id, snapshot, fieldsToIndex);
     });
     try {
-        await index.addDocuments(document, { primaryKey: '_firestore_id' });
+        await index.addDocuments(document, { primaryKey: 'id' });
     }
     catch (e) {
         logs.error(e);
