@@ -16,6 +16,6 @@
     "test": "yarn --cwd functions test",
     "test:watch": "yarn --cwd functions test:watch",
     "test:coverage": "yarn --cwd functions test:coverage",
-    "run-cli": "./functions/lib/import/index.js"
+    "run-cli": "node ./functions/lib/import/index.js"
   }
 }
